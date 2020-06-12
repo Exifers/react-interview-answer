@@ -1,0 +1,58 @@
+.like-dislike-bar .like-icon, .like-dislike-bar .dislike-icon {
+  fill: var(--gray);
+  height: 22px;
+}
+
+.like-dislike-bar .button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  box-sizing: content-box;
+}
+
+.like-dislike-bar .like-button {
+  margin-right: 5px;
+}
+
+.like-dislike-bar .button .likes,
+.like-dislike-bar .button .dislikes {
+  color: var(--gray);
+  font-weight: bold;
+  font-size: 15px;
+  height: 15px;
+  line-height: 1.15;
+}
+
+.like-dislike-bar .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-dislike-bar {
+  min-width: 80px;
+}
+
+.like-dislike-bar .bar {
+  margin-top: 5px;
+  background-color: var(--light);
+  height: 2px;
+}
+
+.like-dislike-bar .like-bar {
+  background-color: var(--gray);
+  height: 2px;
+}
+
+.like-dislike-bar .active .like-icon,
+.like-dislike-bar .active .dislike-icon,
+.like-dislike-bar .active .likes,
+.like-dislike-bar .active .dislikes
+{
+  fill: var(--blue);
+  color: var(--blue);
+}
+
+.active .like-bar {
+  background: var(--blue);
+}
